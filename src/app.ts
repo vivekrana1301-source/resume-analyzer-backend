@@ -5,10 +5,15 @@ import authRoutes from "./routes/auth.routes";
 const app = express();
 
 // ✅ CORS (must be first)
-app.use(cors({
-  origin: "https://resume-analyzer-frontend-cyan.vercel.app/",
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://resume-analyzer-frontend-git-main-vr717109-5238s-projects.vercel.app"
+    ],
+    credentials: true
+  })
+);
 
 // ✅ Body parser (fix 413 error)
 app.use(express.json({ limit: "10mb" }));
