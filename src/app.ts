@@ -6,7 +6,7 @@ const app = express();
 
 // ✅ CORS (must be first)
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://resume-analyzer-frontend-cyan.vercel.app/",
   credentials: true
 }));
 

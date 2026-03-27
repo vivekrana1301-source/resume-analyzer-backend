@@ -39,8 +39,6 @@ export const register = async (req: Request, res: Response) => {
   }
 };
 
-
-
 // LOGIN
 export const login = async (req: Request, res: Response) => {
   try {

@@ -9,7 +9,7 @@ import { getLatestResult } from "../controllers/resume.controller";
 const router = express.Router()
 //Registr Api
 
-router.post("/register",register )
+router.post("/register",register)
 
 router.post("/login",login )
 
