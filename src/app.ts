@@ -11,7 +11,6 @@ app.use(
       "http://localhost:5173",
       "https://resume-analyzer-frontend-cyan.vercel.app"
     ],
-    credentials: false
   })
 );
 
